@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AC16C151AC3EF870054B8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC16C141AC3EF870054B8AC /* AppDelegate.swift */; };
+		9AC16C171AC3EF870054B8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC16C161AC3EF870054B8AC /* ViewController.swift */; };
+		9AC16C1A1AC3EF870054B8AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC16C181AC3EF870054B8AC /* Main.storyboard */; };
+		9AC16C1C1AC3EF870054B8AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC16C1B1AC3EF870054B8AC /* Images.xcassets */; };
+		9AC16C1F1AC3EF870054B8AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AC16C1D1AC3EF870054B8AC /* LaunchScreen.xib */; };
+		9AC16C2B1AC3EF870054B8AC /* photoFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC16C2A1AC3EF870054B8AC /* photoFilterTests.swift */; };
+		9AC16C351AC3EFA00054B8AC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC16C341AC3EFA00054B8AC /* CoreImage.framework */; };
+		9AC16C391AC4405A0054B8AC /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC16C381AC4405A0054B8AC /* sample.png */; };
+		9AC16C3B1AC46B560054B8AC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC16C3A1AC46B550054B8AC /* Social.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AC16C251AC3EF870054B8AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AC16C071AC3EF870054B8AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC16C0E1AC3EF870054B8AC;
+			remoteInfo = photoFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AC16C0F1AC3EF870054B8AC /* photoFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC16C131AC3EF870054B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC16C141AC3EF870054B8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AC16C161AC3EF870054B8AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AC16C191AC3EF870054B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AC16C1B1AC3EF870054B8AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9AC16C1E1AC3EF870054B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9AC16C241AC3EF870054B8AC /* photoFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photoFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC16C291AC3EF870054B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC16C2A1AC3EF870054B8AC /* photoFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoFilterTests.swift; sourceTree = "<group>"; };
+		9AC16C341AC3EFA00054B8AC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9AC16C381AC4405A0054B8AC /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample.png; path = ../../../../Downloads/sample.png; sourceTree = "<group>"; };
+		9AC16C3A1AC46B550054B8AC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AC16C0C1AC3EF870054B8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC16C3B1AC46B560054B8AC /* Social.framework in Frameworks */,
+				9AC16C351AC3EFA00054B8AC /* CoreImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC16C211AC3EF870054B8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AC16C061AC3EF870054B8AC = {
+			isa = PBXGroup;
+			children = (
+				9AC16C3A1AC46B550054B8AC /* Social.framework */,
+				9AC16C341AC3EFA00054B8AC /* CoreImage.framework */,
+				9AC16C111AC3EF870054B8AC /* photoFilter */,
+				9AC16C271AC3EF870054B8AC /* photoFilterTests */,
+				9AC16C101AC3EF870054B8AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AC16C101AC3EF870054B8AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AC16C0F1AC3EF870054B8AC /* photoFilter.app */,
+				9AC16C241AC3EF870054B8AC /* photoFilterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AC16C111AC3EF870054B8AC /* photoFilter */ = {
+			isa = PBXGroup;
+			children = (
+				9AC16C381AC4405A0054B8AC /* sample.png */,
+				9AC16C141AC3EF870054B8AC /* AppDelegate.swift */,
+				9AC16C161AC3EF870054B8AC /* ViewController.swift */,
+				9AC16C181AC3EF870054B8AC /* Main.storyboard */,
+				9AC16C1B1AC3EF870054B8AC /* Images.xcassets */,
+				9AC16C1D1AC3EF870054B8AC /* LaunchScreen.xib */,
+				9AC16C121AC3EF870054B8AC /* Supporting Files */,
+			);
+			path = photoFilter;
+			sourceTree = "<group>";
+		};
+		9AC16C121AC3EF870054B8AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AC16C131AC3EF870054B8AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AC16C271AC3EF870054B8AC /* photoFilterTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AC16C2A1AC3EF870054B8AC /* photoFilterTests.swift */,
+				9AC16C281AC3EF870054B8AC /* Supporting Files */,
+			);
+			path = photoFilterTests;
+			sourceTree = "<group>";
+		};
+		9AC16C281AC3EF870054B8AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AC16C291AC3EF870054B8AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC16C0E1AC3EF870054B8AC /* photoFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC16C2E1AC3EF870054B8AC /* Build configuration list for PBXNativeTarget "photoFilter" */;
+			buildPhases = (
+				9AC16C0B1AC3EF870054B8AC /* Sources */,
+				9AC16C0C1AC3EF870054B8AC /* Frameworks */,
+				9AC16C0D1AC3EF870054B8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = photoFilter;
+			productName = photoFilter;
+			productReference = 9AC16C0F1AC3EF870054B8AC /* photoFilter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AC16C231AC3EF870054B8AC /* photoFilterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC16C311AC3EF870054B8AC /* Build configuration list for PBXNativeTarget "photoFilterTests" */;
+			buildPhases = (
+				9AC16C201AC3EF870054B8AC /* Sources */,
+				9AC16C211AC3EF870054B8AC /* Frameworks */,
+				9AC16C221AC3EF870054B8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AC16C261AC3EF870054B8AC /* PBXTargetDependency */,
+			);
+			name = photoFilterTests;
+			productName = photoFilterTests;
+			productReference = 9AC16C241AC3EF870054B8AC /* photoFilterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AC16C071AC3EF870054B8AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "takuma arimura";
+				TargetAttributes = {
+					9AC16C0E1AC3EF870054B8AC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9AC16C231AC3EF870054B8AC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9AC16C0E1AC3EF870054B8AC;
+					};
+				};
+			};
+			buildConfigurationList = 9AC16C0A1AC3EF870054B8AC /* Build configuration list for PBXProject "photoFilter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AC16C061AC3EF870054B8AC;
+			productRefGroup = 9AC16C101AC3EF870054B8AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC16C0E1AC3EF870054B8AC /* photoFilter */,
+				9AC16C231AC3EF870054B8AC /* photoFilterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AC16C0D1AC3EF870054B8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC16C1A1AC3EF870054B8AC /* Main.storyboard in Resources */,
+				9AC16C1F1AC3EF870054B8AC /* LaunchScreen.xib in Resources */,
+				9AC16C1C1AC3EF870054B8AC /* Images.xcassets in Resources */,
+				9AC16C391AC4405A0054B8AC /* sample.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC16C221AC3EF870054B8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AC16C0B1AC3EF870054B8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC16C171AC3EF870054B8AC /* ViewController.swift in Sources */,
+				9AC16C151AC3EF870054B8AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC16C201AC3EF870054B8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC16C2B1AC3EF870054B8AC /* photoFilterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AC16C261AC3EF870054B8AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AC16C0E1AC3EF870054B8AC /* photoFilter */;
+			targetProxy = 9AC16C251AC3EF870054B8AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AC16C181AC3EF870054B8AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC16C191AC3EF870054B8AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AC16C1D1AC3EF870054B8AC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC16C1E1AC3EF870054B8AC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AC16C2C1AC3EF870054B8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AC16C2D1AC3EF870054B8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AC16C2F1AC3EF870054B8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = photoFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AC16C301AC3EF870054B8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = photoFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9AC16C321AC3EF870054B8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = photoFilterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photoFilter.app/photoFilter";
+			};
+			name = Debug;
+		};
+		9AC16C331AC3EF870054B8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = photoFilterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photoFilter.app/photoFilter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AC16C0A1AC3EF870054B8AC /* Build configuration list for PBXProject "photoFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC16C2C1AC3EF870054B8AC /* Debug */,
+				9AC16C2D1AC3EF870054B8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC16C2E1AC3EF870054B8AC /* Build configuration list for PBXNativeTarget "photoFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC16C2F1AC3EF870054B8AC /* Debug */,
+				9AC16C301AC3EF870054B8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AC16C311AC3EF870054B8AC /* Build configuration list for PBXNativeTarget "photoFilterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC16C321AC3EF870054B8AC /* Debug */,
+				9AC16C331AC3EF870054B8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AC16C071AC3EF870054B8AC /* Project object */;
+}
