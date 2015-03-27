@@ -24,8 +24,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        targetImageView?.image = myImage
-        
+        //targetImageView?.image = myImage
         targetImageView?.contentMode = UIViewContentMode.ScaleAspectFill
     }
 
@@ -46,16 +45,21 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         openFolda.allowsEditing = true
         //フォトライブラリーをモーダルビューとして表示する
         self.presentViewController(openFolda, animated: true, completion: nil)
+        
     }
     
-    //
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, info: [NSObject : AnyObject]!) {
+    //UIImagePickerViewdelegate
+    //フォトライブラリで画像が選ばれたときの処理
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, info: NSDictionary!) {
         if info[UIImagePickerControllerOriginalImage] != nil {
             let pickingImage : UIImage = info[UIImagePickerControllerOriginalImage] as UIImage
             targetImageView?.image = pickingImage
-            myImage = pickingImage
+            //myImage = pickingImage
         }
-        picker.dismissViewControllerAnimated(true, completion: nil)
+//        var image : UIImage = info.objectForKey(UIImagePickerControllerEditedImage) as UIImage
+//        targetImageView?.image = image
+        //UIImageViewのhaikeiに選択された画像を選択
+        //picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
     //普通に保存するとJPEG形式で保存すると荒れるのでPNG形式に変換している
