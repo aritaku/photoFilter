@@ -20,12 +20,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     var myImage = UIImage()
     
     @IBOutlet var targetImageView: UIImageView?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //targetImageView?.image = myImage
         targetImageView?.contentMode = UIViewContentMode.ScaleAspectFill
+        
+        targetImageView?.image = UIImage(named: "big.jpg")
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,15 +52,10 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     //UIImagePickerViewdelegate
     //フォトライブラリで画像が選ばれたときの処理
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, info: NSDictionary!) {
-        if info[UIImagePickerControllerOriginalImage] != nil {
+        //if info[UIImagePickerControllerOriginalImage] != nil {
             let pickingImage : UIImage = info[UIImagePickerControllerOriginalImage] as UIImage
             targetImageView?.image = pickingImage
-            //myImage = pickingImage
-        }
-//        var image : UIImage = info.objectForKey(UIImagePickerControllerEditedImage) as UIImage
-//        targetImageView?.image = image
-        //UIImageViewのhaikeiに選択された画像を選択
-        //picker.dismissViewControllerAnimated(true, completion: nil)
+        
     }
     
     //普通に保存するとJPEG形式で保存すると荒れるのでPNG形式に変換している
@@ -107,11 +103,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         //今表示されている画像の取得
         originImage = targetImageView?.image
         
-        //写真画像の向きを正しく表示するためのおまじない
-//        UIGraphicsBeginImageContext(originImage.size)
-//        originImage.drawInRect(CGRectMake(0, 0, originImage.size.width, originImage.size.height))
-//        originImage = UIGraphicsGetImageFromCurrentImageContext()
-        
         //UIImageをCIImageに変換
         filteredImage = CIImage(CGImage: originImage.CGImage)
         
@@ -124,7 +115,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         //CIImageをUIImageへ変換
         var myCIContext :CIContext = CIContext(options: nil)
-        var imageRef :CGImageRef = myCIContext.createCGImage(filteredImage, fromRect: filteredImage.extent())
+        var imageRef :CGImageRef = myCIContext.createCGImage(filteredImage, fromRect: filteredImage.extent(
+            ))!
         
         outputImage = UIImage(CGImage: imageRef, scale: 1.0, orientation:UIImageOrientation.Up)
         
@@ -138,11 +130,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         
         //今表示されている画像の取得
         originImage = targetImageView?.image
-        
-        //写真画像を正しく表示するためのおまじない
-//        UIGraphicsBeginImageContext(originImage.size)
-//        originImage.drawInRect(CGRectMake(0, 0, originImage.size.width, originImage.size.height))
-//        originImage = UIGraphicsGetImageFromCurrentImageContext()
         
         //UIImageをCIImageに変換
         filteredImage = CIImage(CGImage: originImage.CGImage)
