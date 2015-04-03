@@ -6,6 +6,8 @@
 //  Copyright (c) 2015年 takuma arimura. All rights reserved.
 //
 
+//中高生に分かりやすく教えることを念頭に作ってあります。
+
 import UIKit
 import CoreImage
 import Social
@@ -24,9 +26,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        targetImageView?.contentMode = UIViewContentMode.ScaleAspectFill
+//        targetImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         
-        targetImageView?.image = UIImage(named: "big.jpg")
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,16 +47,19 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         openFolda.allowsEditing = true
         //フォトライブラリーをモーダルビューとして表示する
         self.presentViewController(openFolda, animated: true, completion: nil)
+        println(openFolda)
         
     }
     
+    //ここに問題あり
     //UIImagePickerViewdelegate
     //フォトライブラリで画像が選ばれたときの処理
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, info: NSDictionary!) {
-        //if info[UIImagePickerControllerOriginalImage] != nil {
-            let pickingImage : UIImage = info[UIImagePickerControllerOriginalImage] as UIImage
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, info: [NSObject : AnyObject]) {
+        if info[UIImagePickerControllerOriginalImage] != nil {
+            let pickingImage = info[UIImagePickerControllerOriginalImage] as UIImage
+            println(pickingImage)
             targetImageView?.image = pickingImage
-        
+        }
     }
     
     //普通に保存するとJPEG形式で保存すると荒れるのでPNG形式に変換している
